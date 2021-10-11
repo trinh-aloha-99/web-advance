@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211011 22:21:29.582" rpa="false" schemaversion="2">
+<suite id="s1" name="TC6" source="C:\Users\TGS\Documents\web-advance\TC6.robot">
+<test id="s1-t1" name="BuiltIn">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>6</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>${i}&gt;2</arg>
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20211011 22:21:29.626" endtime="20211011 22:21:29.627"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211011 22:21:29.627" endtime="20211011 22:21:29.627"/>
+</kw>
+<status status="PASS" starttime="20211011 22:21:29.625" endtime="20211011 22:21:29.628"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>${i}&gt;2</arg>
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20211011 22:21:29.628" endtime="20211011 22:21:29.628"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211011 22:21:29.629" endtime="20211011 22:21:29.629"/>
+</kw>
+<status status="PASS" starttime="20211011 22:21:29.628" endtime="20211011 22:21:29.629"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>${i}&gt;2</arg>
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20211011 22:21:29.630" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20211011 22:21:29.630" endtime="20211011 22:21:29.631"/>
+</kw>
+<status status="PASS" starttime="20211011 22:21:29.629" endtime="20211011 22:21:29.631"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>${i}&gt;2</arg>
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20211011 22:21:29.633" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20211011 22:21:29.632" endtime="20211011 22:21:29.633"/>
+</kw>
+<status status="PASS" starttime="20211011 22:21:29.632" endtime="20211011 22:21:29.633"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Continue For Loop If" library="BuiltIn">
+<arg>${i}&gt;2</arg>
+<doc>Skips the current for loop iteration if the ``condition`` is true.</doc>
+<msg timestamp="20211011 22:21:29.634" level="INFO">Continuing for loop from the next iteration.</msg>
+<status status="PASS" starttime="20211011 22:21:29.634" endtime="20211011 22:21:29.635"/>
+</kw>
+<status status="PASS" starttime="20211011 22:21:29.634" endtime="20211011 22:21:29.635"/>
+</iter>
+<status status="PASS" starttime="20211011 22:21:29.624" endtime="20211011 22:21:29.635"/>
+</for>
+<kw name="Should Match Regexp" library="BuiltIn">
+<arg>robooooot</arg>
+<arg>ro?booooot</arg>
+<doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
+<status status="PASS" starttime="20211011 22:21:29.635" endtime="20211011 22:21:29.636"/>
+</kw>
+<kw name="Should Match Regexp" library="BuiltIn">
+<arg>robooooot</arg>
+<arg>[rkj]obooooot</arg>
+<doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
+<status status="PASS" starttime="20211011 22:21:29.636" endtime="20211011 22:21:29.637"/>
+</kw>
+<kw name="Should Match Regexp" library="BuiltIn">
+<arg>robooooot</arg>
+<arg>^[rkj]obooooot</arg>
+<doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
+<status status="PASS" starttime="20211011 22:21:29.637" endtime="20211011 22:21:29.637"/>
+</kw>
+<status status="PASS" starttime="20211011 22:21:29.624" endtime="20211011 22:21:29.638"/>
+</test>
+<status status="PASS" starttime="20211011 22:21:29.585" endtime="20211011 22:21:29.640"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC6">TC6</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211011 22:21:29.621" level="ERROR">Error in file 'C:\Users\TGS\Documents\web-advance\TC6.robot' on line 2: Importing library 'Selenium' failed: ModuleNotFoundError: No module named 'Selenium'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Program Files\Python39\Scripts\robot.exe
+  C:\Program Files\Python39\python39.zip
+  C:\Program Files\Python39\DLLs
+  C:\Program Files\Python39\lib
+  C:\Program Files\Python39
+  C:\Program Files\Python39\lib\site-packages</msg>
+</errors>
+</robot>
