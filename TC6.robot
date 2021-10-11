@@ -13,4 +13,8 @@ BuiltIn
     Should Match Regexp     robooooot       ro?booooot
     Should Match Regexp     robooooot       [rkj]obooooot
     Should Match Regexp     robooooot       ^[rkj]obooooot
+    Should Match Regexp     robooooot       ro*booooot
+    Should Match Regexp     robooooot       ro+booooot
+    Should Match Regexp     robooooot       t$          # ket thuc bang ky tu 't'
+
 
